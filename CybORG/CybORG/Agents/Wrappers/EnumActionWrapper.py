@@ -53,4 +53,9 @@ class EnumActionWrapper(BaseWrapper):
                 possible_actions.append(action(**p_dict))
 
         self.possible_actions = possible_actions
+        
+        # Print the possible actions with their corresponding index
+        #for i, action in enumerate(self.possible_actions):
+            #print(f"Action ID: {i}, Action: {action}")
+        
         return len(possible_actions)
